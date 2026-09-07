@@ -1,51 +1,56 @@
-# Movie Dataset Exploratory Data Analysis
+#  Movie Dataset Exploratory Data Analysis
 
-## Overview
+##  Overview
 
-This project performs Exploratory Data Analysis (EDA) on a movie dataset to identify patterns and insights related to movie popularity, ratings, vote counts, genres, languages, and release trends.
+This project performs Exploratory Data Analysis (EDA) on a movie dataset to uncover patterns and trends in movie popularity, ratings, vote counts, genres, languages, and release dates.
 
-## Objectives
+The analysis includes data cleaning, statistical analysis, outlier detection, visualization, and correlation analysis to generate meaningful insights from the dataset.
+
+##  Objectives
 
 - Understand the structure and characteristics of the dataset
+- Clean and preprocess the data
 - Handle missing and duplicate values
 - Analyze numerical and categorical variables
 - Identify and evaluate outliers
 - Perform statistical analysis
 - Explore relationships between movie attributes
 - Create meaningful visualizations
-- Generate insights from the data
+- Generate data-driven insights
 
-## Dataset
+##  Dataset
 
-The dataset contains the following columns:
+The dataset contains information about movies, including:
 
-- Release_Date
-- Title
-- Overview
-- Popularity
-- Vote_Count
-- Vote_Average
-- Original_Language
-- Genre
-- Poster_Url
+| Column | Description |
+|---|---|
+| `Release_Date` | Movie release date |
+| `Title` | Movie title |
+| `Overview` | Movie overview/description |
+| `Popularity` | Movie popularity score |
+| `Vote_Count` | Number of votes received |
+| `Vote_Average` | Average movie rating |
+| `Original_Language` | Original language of the movie |
+| `Genre` | Movie genre |
+| `Poster_Url` | Movie poster URL |
 
-## Data Cleaning
+##  Data Cleaning & Preprocessing
 
-The following preprocessing steps were performed:
+The following steps were performed:
 
-- Checked the dataset structure and data types
-- Identified and handled missing values
-- Checked and removed duplicate records
+- Inspected dataset structure and data types
+- Checked and handled missing values
+- Identified and removed duplicate records
 - Converted `Release_Date` to datetime format
 - Converted numerical columns to appropriate data types
-- Checked for outliers using the IQR method
-- Retained genuine outliers that represented valid movie observations
+- Detected outliers using the IQR method
+- Retained genuine outliers representing valid movie observations
 
-## Exploratory Data Analysis
+##  Exploratory Data Analysis
 
 ### Statistical Analysis
 
-The following statistical measures were analyzed:
+Analyzed:
 
 - Mean
 - Median
@@ -58,7 +63,7 @@ The following statistical measures were analyzed:
 
 ### Univariate Analysis
 
-Individual variables were analyzed using:
+Explored individual variables using:
 
 - Histograms
 - Boxplots
@@ -67,44 +72,45 @@ Individual variables were analyzed using:
 
 ### Bivariate Analysis
 
-Relationships between variables were analyzed using:
+Investigated relationships between:
 
 - Vote Count vs Popularity
 - Vote Average vs Popularity
 - Genre vs Vote Average
 
-## Key Visualizations
+##  Key Visualizations
 
-1. Top 10 Most Popular Movies
-2. Top 10 Movie Genres
-3. Movies Released Over Time
-4. Rating Distribution
-5. Vote Count vs Popularity
-6. Correlation Heatmap
+- Top 10 Most Popular Movies
+- Top 10 Movie Genres
+- Movies Released Over Time
+- Rating Distribution
+- Vote Count vs Popularity
+- Correlation Heatmap
 
-## Key Insights
+##  Key Insights
 
 - Movie popularity is highly right-skewed, with a small number of movies having exceptionally high popularity.
-- Vote count is also strongly right-skewed, indicating that a small number of movies receive significantly more votes.
-- The average movie rating is approximately 6.44.
-- Popularity and vote count have a weak positive correlation.
-- Popularity and vote average have an almost negligible linear relationship.
-- Vote count and vote average show a weak positive correlation.
-- Different genres show variations in their average ratings and frequency.
+- Vote count is strongly right-skewed, indicating that a small number of movies receive significantly more votes.
+- The average movie rating is approximately **6.44**.
+- Popularity and vote count show a **weak positive correlation**.
+- Popularity and vote average have an **almost negligible linear relationship**.
+- Vote count and vote average show a **weak positive correlation**.
+- Movie genres differ in their average ratings and frequency.
 
-## Tools and Technologies
+##  Tools & Technologies
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
-- Jupyter Notebook / Google Colab
+- Jupyter Notebook
+- Google Colab
 
 ## Project Structure
 
 ```text
-01_movie_eda/
+01-Movie-EDA/
 │
 ├── movie_dataset_eda.ipynb
 ├── README.md
